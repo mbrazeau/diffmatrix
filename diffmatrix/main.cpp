@@ -123,7 +123,7 @@ void setup_reader(MultiFormatReader *reader)
 int main(int argc, const char * argv[]) {
     
     if (argc < 3) {
-        std::cout << "DiffMatrix" << std::endl;
+        std::cout << "DiffMatrix v 1.0" << std::endl;
         std::cout << "Compare two versions of a Nexus matrix." << std::endl;
         std::cout << "By Martin D Brazeau" << std::endl;
         std::cout << "No warranties or guarantees of any kind." << std::endl;
