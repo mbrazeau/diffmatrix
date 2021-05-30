@@ -81,47 +81,6 @@ void find_differences(MultiFormatReader &f1reader, MultiFormatReader &f2reader)
                 d.charn = c;
                 diffs.push_back(d);
             }
-            
-//            if (compare_cells(*f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0),
-//                              *f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)
-//                              , t1, c) == false)
-//            {
-//                std::cout << std::setw(20);
-//                std::cout << f1reader.GetTaxaBlock(0)->GetTaxonLabel(t1);
-//                std::cout << "\t";
-//
-//
-//                if (f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t1, c, i) < 0) {
-//                    if (f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t1, c, i) == -3) {
-//                        std::cout << "-";
-//                    } else {
-//                        std::cout << "?";
-//                    }
-//                }
-//                else {
-//        //            std::cout << "\t";
-//                    for (i = 0; i < f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetNumStates(t1, c); ++i) {
-//                        std::cout << f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t1, c, i);
-//                    }
-//                }
-//
-//                i = 0;
-//                std::cout << std::setw(4);
-//                if (f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t2, c, i) < 0) {
-//                    if (f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t2, c, i) == -3) {
-//                        std::cout << "-";
-//                    } else {
-//                        std::cout << "?";
-//                    }
-//                }
-//                else {
-//        //            std::cout << "";
-//                    for (i = 0; i < f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetNumStates(t2, c); ++i) {
-//                        std::cout << f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t2, c, i);
-//                    }
-//                }
-//                std::cout << std::endl;
-//            }
         }
     }
     
@@ -154,7 +113,6 @@ void find_differences(MultiFormatReader &f1reader, MultiFormatReader &f2reader)
             }
         }
         else {
-//            std::cout << "\t";
             for (k = 0; k < f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetNumStates(t1, c); ++k) {
                 std::cout << f1reader.GetCharactersBlock(f1reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t1, c, k);
             }
@@ -170,7 +128,6 @@ void find_differences(MultiFormatReader &f1reader, MultiFormatReader &f2reader)
             }
         }
         else {
-//            std::cout << "";
             for (k = 0; k < f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetNumStates(t2, c); ++k) {
                 std::cout << f2reader.GetCharactersBlock(f2reader.GetTaxaBlock(0), 0)->GetInternalRepresentation(t2, c, k);
             }
