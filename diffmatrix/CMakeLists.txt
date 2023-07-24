@@ -1,5 +1,0 @@
-set(EXENAME "diffmatrix")
-include_directories()
-add_executable(${EXENAME} main.cpp)
-target_link_libraries(${EXENAME} ${PATH_LIB_NCL})
-install(TARGETS ${EXENAME} DESTINATION bin)
