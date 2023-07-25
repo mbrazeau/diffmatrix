@@ -10,7 +10,7 @@ void show_info(void)
 {
     std::cout <<
         "\n\n"
-        "    Diffmatrix 2.0 by Martin D. Brazeau\n"
+        "    Diffmatrix 2.1 by Martin D. Brazeau\n"
         "    Compares two input Nexus files and outputs differences\n\n"
         "    Useage: ./diffmatrix file1.nex file2.nex\n\n"
         "    This is free software. You are welcome to use, modify, and distribute without fees\n"
