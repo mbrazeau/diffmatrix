@@ -15,6 +15,7 @@ def pullAll():
 
 def cloneAllDeps():
     os.system("git pull")
+    os.system("git submodule update --init")
 #    os.system("git clone https://github.com/mtholder/ncl.git")
 #    pullAll()
 #    os.chdir("..")

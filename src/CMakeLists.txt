@@ -1,4 +1,3 @@
-set(EXENAME "diffmatrix")
 add_executable(${EXENAME} main.cpp)
 add_executable(${EXENAME} ${nui_SRC})
 target_link_libraries(${EXENAME} ${PATH_LIB_NCL})

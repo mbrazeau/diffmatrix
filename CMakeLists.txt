@@ -1,5 +1,6 @@
 cmake_minimum_required (VERSION 3.25)
 project(diffmatrix)
+set(EXENAME "diffmatrix")
 include_directories(${CMAKE_SOURCE_DIR}/ncl ${CMAKE_SOURCE_DIR}/ncl)
 set(PATH_LIB_NCL "ncl_static")
 if(MSVC)
