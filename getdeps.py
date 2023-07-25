@@ -24,14 +24,15 @@ def buildExe():
     os.system("make")
 
 def winBuild():
-    os.system("cd ./ncl")
+    os.system("cd ncl")
     os.system("mkdir build")
     os.system("cd build")
     os.system("cmake ..")
     os.system("cmake .. -G \"Visual Studio 16 2019\"")
     os.system("cmake --build .")
-    os.system("cd ..")
+    os.system("cd ../..")
     os.system("mkdir build")
+    os.system("cd build")
     os.system("cmake ..")
     os.system("cmake .. -G \"Visual Studio 16 2019\"")
     os.system("cmake --build .")
