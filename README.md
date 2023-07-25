@@ -1,7 +1,7 @@
 # diffmatrix
 Compare two discrete character matrices stored in Nexus files and print out the differences.
 
-This program uses the [NCL by Mark Holder](https://github.com/mtholder/ncl).
+This program uses the [NCL by Mark Holder](https://github.com/mtholder/ncl). See instructions on building from source below for details on obtaining this dependency.
 
 ## Usage
 ```
@@ -18,27 +18,11 @@ This will be improved in a future release. For now, it basically lets you compar
 
 ## Output
 
-The output of the program is pretty basic. If any differences are found in a particular character, the taxon name will be printed with an output of the scoring 
-from file1.nex (left column) and file2.nex (right column)
 
-### Example output:
-```
-Character 30
-          Galeaspida	0123   01
+## Building diffmatrix from source
+You should have a C++ compiler on your machine. To use the convenience utilities and build systems, you should also have python, git, and CMAKE installed.
 
-Character 31
-          Gemuendina	01   1
-            Jagorina	01   1
+### Building with the build scripts
 
-Character 59
-         Kansasiella	1   ?
-            Achoania	0   ?
+### Building `manually`
 
-Character 80
-   Macropetalichthys	0   ?
-
-Character 88
-         Cladodoides	?   1
-    Parayunnanolepis	0   ?
-           Romundina	0   ?
-```
