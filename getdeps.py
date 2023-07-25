@@ -45,7 +45,7 @@ def main(argv):
         elif (argv[0] == "build"):
             print("Building diffmatrix")
             cloneAllDeps()
-            if platform.system != "Windows"
+            if platform.system != "Windows":
                 buildExe()
             else:
                 winBuild()
