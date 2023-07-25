@@ -23,6 +23,19 @@ def buildExe():
     os.system("cmake ..")
     os.system("make")
 
+def winBuild():
+    os.system("cd ./ncl")
+    os.system("mkdir build")
+    os.system("cd build")
+    os.system("cmake ..")
+    os.system("cmake .. -G \"Visual Studio 16 2019\"")
+    os.system("cmake --build .")
+    os.system("cd ..")
+    os.system("mkdir build")
+    os.system("cmake ..")
+    os.system("cmake .. -G \"Visual Studio 16 2019\"")
+    os.system("cmake --build .")
+
 def main(argv):
     args = ["update"]
     if (len(argv) > 0):
@@ -32,7 +45,10 @@ def main(argv):
         elif (argv[0] == "build"):
             print("Building diffmatrix")
             cloneAllDeps()
-            buildExe()
+            if platform.system != "Windows"
+                buildExe()
+            else:
+                winBuild()
         else:
             print("Unrecognised argument")
     else:
