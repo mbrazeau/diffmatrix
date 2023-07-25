@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.25)
+cmake_minimum_required (VERSION 3.1)
 project(diffmatrix)
 set(EXENAME "diffmatrix")
 include_directories(${CMAKE_SOURCE_DIR}/ncl/ncl ${CMAKE_SOURCE_DIR}/ncl)
