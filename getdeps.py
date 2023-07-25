@@ -16,12 +16,8 @@ def pullAll():
 def cloneAllDeps():
     os.system("git pull")
     os.system("git submodule update --init")
-#    os.system("git clone https://github.com/mtholder/ncl.git")
-#    pullAll()
-#    os.chdir("..")
 
-def buildLibs():
-    #os.chdir("./external/ncl")
+def buildExe():
     os.system("mkdir build")
     os.chdir("build")
     os.system("cmake ..")
@@ -35,7 +31,8 @@ def main(argv):
             pullAll()
         elif (argv[0] == "build"):
             print("Building diffmatrix")
-            buildLibs()
+            cloneAllDeps()
+            buildExe()
         else:
             print("Unrecognised argument")
     else:
