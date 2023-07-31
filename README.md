@@ -3,6 +3,27 @@ Compare two discrete character matrices stored in Nexus files and print out the 
 
 This program uses the [NCL by Mark Holder](https://github.com/mtholder/ncl). See instructions on building from source below for details on obtaining this dependency.
 
+## Download and install
+For the most part, no installation is necessary but some systems may require bypassing security restrictions on your system. You should be familiar with your system's command console/terminal program.
+
+### macOS
+[Download for Mac (Apple Silicon: M1)](https://github.com/mbrazeau/diffmatrix/releases/download/v2.0/diffmatrix_macOS_M1)
+
+This is compatible with new macs running M1 chips (Apple Silicon only). Please contact me if you need a build for an Intel processor.
+
+After downloading, you will need to open Terminal (in the Applications/Utilities folder), navigate to where the diffmatrix download sits, and use the command
+
+`chmod a+x diffmatrix_macOS_M1`
+
+Then attempt to run the program with the useage below. This will fail.
+
+Open System Settings > Privacy & Security, scroll down to Security. There should be a field asking you if you want to run diffmatrix anyway. Click affirmatively.
+
+### Windows
+[Download for Windows](https://github.com/mbrazeau/diffmatrix/releases/download/v2.0/diffmatrix_Winx86.exe)
+
+This should work as-is, but Windows may throw a warning. Click "More info" and then allow the program to run anyway.
+
 ## Usage
 
 The program requires two valid Nexus files and delivers best results if the character and state labels are fully defined for all characters in the matrix. Place the two Nexus files in the same directory as the diffmatrix executable and enter the program name followed by the name of each file being compared:
