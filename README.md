@@ -9,7 +9,7 @@ For the most part, no installation is necessary but some systems may require byp
 ### macOS
 [Download for Mac (Apple Silicon: M1)](https://github.com/mbrazeau/diffmatrix/releases/download/v2.0/diffmatrix_macOS_M1)
 
-This is compatible with new macs running M1 chips (Apple Silicon only). Please contact me if you need a build for an Intel processor.
+This is compatible with new macs running M1 chips (Apple Silicon only) and is **tested on macOS Ventura 13.4.1**. Please contact me if you need a build for an Intel processor.
 
 After downloading, you will need to open Terminal (in the Applications/Utilities folder), navigate to where the diffmatrix download sits, and use the command
 
@@ -22,7 +22,7 @@ Open System Settings > Privacy & Security, scroll down to Security. There should
 ### Windows
 [Download for Windows](https://github.com/mbrazeau/diffmatrix/releases/download/v2.0/diffmatrix_Winx86.exe)
 
-This should work as-is, but Windows may throw a warning. Click "More info" and then allow the program to run anyway.
+This is compatible with any Windows 10 systems. It should work as-is, but Windows may throw a warning. Click "More info" and then allow the program to run anyway.
 
 ## Usage
 
