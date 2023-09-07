@@ -24,6 +24,11 @@ Open System Settings > Privacy & Security, scroll down to Security. There should
 
 This is compatible with any Windows 10 systems. It should work as-is, but Windows may throw a warning. Click "More info" and then allow the program to run anyway.
 
+### Linux
+Probably the best way to install the program is to install it from source on your machine.
+See instructions below.
+
+
 ## Using diffmatrix
 
 Diffmatrix is a simple console utility. This means you should have a basic understanding of using your system's command prompt (e.g. Terminal or, on Windows, `cmd.exe`). 
