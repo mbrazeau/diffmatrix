@@ -10,7 +10,7 @@ void show_info(void)
 {
     std::cout <<
         "\n\n"
-        "    Diffmatrix 2.1 by Martin D. Brazeau\n"
+        "    Diffmatrix 2.2 by Martin D. Brazeau\n"
         "    Compares two input Nexus files and outputs differences\n\n"
         "    Useage: ./diffmatrix file1.nex file2.nex\n\n"
         "    This is free software. You are welcome to use, modify, and distribute without fees\n"
@@ -230,9 +230,22 @@ int main(int argc, const char * argv[])
     reader_init(&origfile);
     reader_init(&newfile);
 
-    origfile.ReadFilepath(argv[1], MultiFormatReader::NEXUS_FORMAT);
-    newfile.ReadFilepath(argv[2], MultiFormatReader::NEXUS_FORMAT);
+    try {
+        origfile.ReadFilepath(argv[1], MultiFormatReader::NEXUS_FORMAT);
+    }
+    catch (NxsException &e) {
+        std::cout << e.what() << std::endl;    
+        return 1;
+    }
 
+    try {
+        newfile.ReadFilepath(argv[2], MultiFormatReader::NEXUS_FORMAT);
+    }
+    catch (NxsException &e) {
+        std::cout << e.what() << std::endl;    
+        return 1;
+    }
+    
     compare_nexus(origfile, newfile);
 
     return 0;
