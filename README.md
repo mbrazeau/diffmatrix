@@ -68,7 +68,7 @@ Your file browser should also have the option for you to copy a file path as tex
 ```
 
 ### Windows:
-Windows useage is fundamentally the same, however instead of `./diffmatrix`, the user issues uses `diffmatrix.exe`. Redirecting the output to a file is probably best as copy-pasting from the command console often does not work.
+Windows useage is fundamentally the same, however instead of `./diffmatrix`, the user issues `diffmatrix.exe`. Redirecting the output to a file is probably best as copy-pasting from the command console often does not work.
 
 
 ## Output
